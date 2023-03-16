@@ -5,7 +5,6 @@ import ru.product.star.vbutkov.service.InMemoryAnswerProcessorService;
 import ru.product.star.vbutkov.service.InMemoryReaderService;
 import ru.product.star.vbutkov.config.ApplicationConfig;
 
-import java.io.IOException;
 
 public class ApplicationMain {
     public static void main(String[] args) {
