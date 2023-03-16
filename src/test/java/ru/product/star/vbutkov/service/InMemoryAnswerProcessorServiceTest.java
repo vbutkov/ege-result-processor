@@ -82,13 +82,10 @@ class InMemoryAnswerProcessorServiceTest {
     }
 
     private static void initPersonAnswers() {
-        personAnswer.add(new Answer(1, Letter.Б, 1));
-        personAnswer.add(new Answer(2, Letter.Б, 1));
-        for (int i = 3; i <= 8; i++) {
-            personAnswer.add(new Answer(i, Letter.А, numberOfPoints.get(i)));
-        }
-        personAnswer.add(new Answer(9, Letter.Б, 3));
-        personAnswer.add(new Answer(10, Letter.А, 3));
+        personAnswer.addAll(rightAnswers);
+        personAnswer.set(0, new Answer(1, Letter.Б, 1));
+        personAnswer.set(1, new Answer(2, Letter.Б, 1));
+        personAnswer.set(8, new Answer(9, Letter.Б, 3));
     }
 
     private static void initPersonRightAnswers() {
